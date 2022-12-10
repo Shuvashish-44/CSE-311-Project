@@ -1,0 +1,47 @@
+<style>
+.logo{
+align-items: 'center';
+text-align: center;
+color: #e21f36a6;
+};
+*{
+align-self: center; 
+align-items: center;  
+}
+.submit input{
+width: 200px;
+height: 50px;
+background-color: #006a4e;
+color: white;
+}
+.title{
+width: 817px;
+height: 40px;
+margin: 0;
+vertical-align: center;
+border-radius: 0%;
+background: #006a4e;
+text-align: center;
+
+}
+
+
+h2{
+color: white;
+}
+label{
+display: inline-block;
+width: 150px;
+text-align: right;
+color: #006a4e;   
+}
+input{
+width:500px;
+}
+.ptype{
+width: 800px;
+padding: 10px;
+border: 2px solid #e21f36a6;
+margin: 0;
+}
+</style>
