@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>NID Form</title>
+       <link href="Update NID Form.css" rel="stylesheet">
+</head>
+        <div class="logo" align="center">
+            
+            <img src="BD logo.jfif" alt="Logo" style="height: 100px; width: 100px;" >
+            <h4>Government of the People’s Republic of Bangladesh
+               <br></h4><h3> NID UPDATE FORM</h3>
+        </div>
+    
+        <HR WIDTH="100%" COLOR="#006a4e" SIZE="3" align="center">
+            <br>  
+           
+<div class="Form" align="center">
+<form action="NIDform.php" method="post">
+
+    <div class="ptype" align="center">
+  
+      <label>Do you have an NID number?</label>
+      <input type="text" name="nid" list="nid">
+  <datalist id="nid">
+    <option value="Yes">
+    <option value="No">
+  </datalist>
+      
+    
+  <div>
+  <label>If yes, enter your NID number</label>
+  <input type="number" name="NID_num" size=50><br>
+  </div> 
+  <p1 style="color: red;">*If you do not have an NID Number, please fill out an NID form first.</p1>
+   <br>
+</div>
+<br><br>
+
+<div class="updates" style="text-align: center;">
+    <h3>Check the boxes for the information you want to update</h3>
+
+    
+<input type="checkbox" id="bg" name="bg" >
+<label for="bg"> Blood Group</label><br>
+    
+<input type="checkbox" id="phone" name="phone" >
+<label for="phone"> Phone Number</label><br>
+
+<input type="checkbox" id="em" name="em">
+<label for="em"> Email</label><br>
+
+<input type="checkbox" id="ms" name="ms">
+<label for="ms"> Marital Status</label><br>
+
+<input type="checkbox" id="spname" name="spname">
+<label for="spname"> Spouse's Name</label><br>
+
+<input type="checkbox" id="spnid" name="spnid">
+<label for="spnid"> Spouse's NID</label><br>
+
+
+<input type="checkbox" id="house/village/road" name="house/village/road">
+<label for="house/village/road"> House/ Village/ Road</label><br>
+
+<input type="checkbox" id="uni" name="uni">
+<label for="uni"> Union</label><br>
+
+<input type="checkbox" id="upazilla" name="upazilla">
+<label for="upazilla"> Upazilla/ Town/ City Corporation</label><br>
+
+<input type="checkbox" id="dist" name="dist">
+<label for="dist"> District</label><br>
+
+<input type="checkbox" id="post" name="post">
+<label for="post"> Post Code</label><br>
+
+<input type="checkbox" id="Ward" name="Ward">
+<label for="Ward"> Ward no.</label><br>
+
+<input type="checkbox" id="zone" name="zone">
+<label for="zone"> Zone no.</label><br>
+
+
+
+<input type="checkbox" id="emgname" name="emgname">
+<label for="emgname"> Emergency Contact's Name</label><br>
+
+<input type="checkbox" id="emgnid" name="emgnid">
+<label for="emgnid"> Emergency Contact's NID</label><br>
+
+<input type="checkbox" id="emgaddress" name="emgaddress">
+<label for="emgaddress"> Emergency Contact's Address</label><br>
+
+<input type="checkbox" id="emgrel" name="emgrel">
+<label for="emgrel"> Emergency Contact's Relationship</label><br>
+
+<input type="checkbox" id="emgph" name="emgph">
+<label for="emgph"> Emergency Contact's Phone Number</label><br>
+
+<input type="checkbox" id="img" name="img">
+<label for="img"> Image</label><br>
+</div>
+
+<div class="title">
+    <h2>Personal Information</h2>
+  </div> 
+  <br>  
+  <div class="ptype">
+    <div>
+  <label>Blood Group</label>
+  <input type="text" name="Blood_Group" ><br>
+</div>
+  
+        <div>
+      <label>Phone Number</label>
+      <input type="tel" name="Phone_num" ><br>
+    </div>
+      <div>
+      <label>Email</label>
+      <input type="email" name="email" ><br>
+    </div>
+    </div>
+
+    <br><br>
+<div class="title">
+    <h2>Spouse Information</h2>
+  </div> 
+  <br>  
+  <div class="ptype">
+    <div>
+  <label>Marital Status</label>
+  <input type="text" name="marital_status" ><br>
+</div>
+ 
+        <div>
+      <label>Spouse's Name</label>
+      <input type="text" name="Spouse_Name" ><br>
+    </div>
+      <div>
+      <label>Spouse's NID</label>
+      <input type="number" name="spouse_nid" min="1000000" ><br>
+    </div>
+    </div>
+
+    
+    
+    <br><br>
+    <div class="title">
+        <h2>Present Address</h2>
+      </div> 
+      <br>  
+      <div class="ptype">
+            <div>
+          <label>House/ Village/ Road</label>
+          <input type="text" name="House_Village_Road" ><br>
+        </div>
+          <div>
+          <label>Union</label>
+          <input type="text" name="Union" ><br>
+        </div>
+        <div>
+          <label>Upazilla/ Town/ City Corporation</label>
+          <input type="text" name="Upazilla_Town_City_Corp" ><br>
+        </div>
+        <div>
+          <label>District</label>
+          <input type="text" name="District" ><br>
+        </div>
+        <div>
+          <label>Post Code</label>
+          <input type="number" name="Post_Code" ><br>
+        </div>
+        <div>
+          <label>Ward Number</label>
+          <input type="number" name="Ward_Num" ><br>
+        </div>
+        <div>
+          <label>Zone Number</label>
+          <input type="number" name="Zone_Num" ><br>
+        </div>
+    </div>
+    
+  <br><br>
+  <div class="title">
+      <h2>Emergency Contact Information</h2>
+    </div> 
+    <br>  
+    <div class="ptype">
+          <div>
+        <label>Contact's Name</label>
+        <input type="text" name="contact_Name" ><br>
+      </div>
+      <div>
+        <label>Contact's National Id Number</label>
+        <input type="number" name="contact_nid" ><br>
+      </div>
+      <div>
+        <label>Contact's Phone Number</label>
+        <input type="tel" name="contact_phone" ><br>
+      </div>
+        <div>
+        <label>Contact's Relationship with the Applicant</label>
+        <input type="text" name="contact_relationship" ><br>
+      </div>
+      <div>
+        <label>Contact's Address</label>
+        <input type="text" name="contact_address" ><br>
+      </div>
+      
+    </div>
+    
+<br><br>
+<div>
+  <label>Enter your image</label>
+  <input class="file-upload-input" type="file" onchange="readURL(this)" accept="Image/*" name="image" ><br>
+</div>
+<br>
+<div style="width: 500px; ">
+  <input  type="checkbox" id="correct" name="correct">
+  <label style="text-align: left; width: 600px;" for="correct">I hereby declare that the details and
+     information given above are complete and true.</label><br>
+  
+  </div>
+
+<br><br>
+     
+      <div class="submit">
+          <input type="Submit" name="save" value="Submit" >
+      </div>
+
+
+</form>
+
+ 
+</div> 
+</html>
