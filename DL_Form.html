@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Driver's License Form</title>
+       <link href="DL_Form.css" rel="stylesheet">
+</head>
+        <div class="logo" align="center">
+            
+            <img src="BRTA Logo.jfif" alt="Logo" style="height: 100px; width: 100px;" >
+            <h4>Bangladesh Road Transport Authority (BRTA)
+                <br>Driver's License (DL) Application Form</h4>
+        </div>
+    
+        <HR WIDTH="100%" COLOR="#006a4e" SIZE="3" align="center">
+            <br>
+            
+            
+<div class="Form" align="center">
+<form action="DL_Form.php" method="post">
+
+  <div class="ptype" >
+  
+    <label>Do you have a Birth registration number?</label>
+    <input type="text" name="br" list="br">
+<datalist id="br">
+  <option value="Yes">
+  <option value="No">
+</datalist>
+    
+  
+<div>
+<label>If yes, enter your birth registration number</label>
+<input type="number" name="birth_reg_num" size=50><br>
+</div> 
+<p1 style="color: red;">*If you do not have a Birth Registration Number, please fill out a birth registration form first.</p1>
+ <br>
+ 
+</div>
+<br><br>
+  <div class="ptype">
+        
+      
+      <div>  
+      <label>BRTA Office Code</label>
+      <input type="number" name="brta_code"> <br>
+    </div>
+    <div>  
+      <label>Application Type</label>
+      <input type="text" name="Application_Type"><br>
+
+    </div>
+    <div>  
+      <label>Applicant Type</label>
+      <input type="text" name="Applicant_Type" > <br>
+    </div>
+    <div>
+      <label>Class of Vehicle</label>
+      <input type="text" name="vehicle_class"><br>
+    </div>
+    </div>
+    <br><br>
+    <div class="title">
+      <h2>Contact Information</h2>
+    </div> 
+    <br>  
+    <div class="ptype">
+          <div>
+        <label>Phone Number</label>
+        <input type="tel" name="Phone_num" ><br>
+      </div>
+        <div>
+        <label>Email</label>
+        <input type="email" name="email" ><br>
+      </div>
+      </div>
+    
+<br><br>
+<div class="title">
+    <h2>Applicant's Present Address</h2>
+  </div> 
+  <br>  
+  <div class="ptype">
+    <div>
+  <label>House/ Village/ Road</label>
+  <input type="text" name="House_Village_Road" ><br>
+</div>
+  <div>
+  <label>Union</label>
+  <input type="text" name="Union" ><br>
+</div>
+<div>
+  <label>Upazilla/ Town/ City Corporation</label>
+  <input type="text" name="Upazilla_Town_City_Corp" ><br>
+</div>
+<div>
+  <label>District</label>
+  <input type="text" name="District" ><br>
+</div>
+<div>
+  <label>Post Code</label>
+  <input type="number" name="Post_Code" ><br>
+</div><div>
+  <label>Ward Number</label>
+  <input type="number" name="Ward_Num" ><br>
+</div><div>
+  <label>Zone Number</label>
+  <input type="number" name="Zone_Num" ><br>
+</div>
+ </div>
+ <br><br>
+  <div class="title">
+      <h2>Emergency Contact Information</h2>
+    </div> 
+    <br>  
+    <div class="ptype">
+          <div>
+        <label>Contact's Name</label>
+        <input type="text" name="contact_Name" ><br>
+      </div>
+      <div>
+        <label>Contact's National Id Number</label>
+        <input type="number" name="contact_nid" ><br>
+      </div>
+      <div>
+        <label>Contact's Phone Number</label>
+        <input type="tel" name="contact_phone" ><br>
+      </div>
+        <div>
+        <label>Contact's Relationship with the Applicant</label>
+        <input type="text" name="contact_relationship" ><br>
+      </div>
+      <div>
+        <label>Contact's Address</label>
+        <input type="text" name="contact_address" ><br>
+      </div>
+      
+    </div>
+  
+      
+ <br><br>
+ <div>
+   <label>Enter your image</label>
+   <input class="file-upload-input" type="file" onchange="readURL(this)" accept="Image/*" name="image" ><br>
+ </div>
+ 
+<br>
+<div style="width: 500px; ">
+  <input  type="checkbox" id="correct" name="correct">
+  <label style="text-align: left; width: 600px;" for="correct">I hereby declare that the details and
+     information given above are complete and true.</label><br>
+  
+  </div>
+  <br><br>
+     <div>
+      <div class="submit">
+          <input type="Submit" name="save" value="Submit" >
+      </div>
+
+
+</form>
+
+ 
+</div> 
+</html>

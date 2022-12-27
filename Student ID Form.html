@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Student ID Form</title>
+       <link href="Student ID Form.css" rel="stylesheet">
+</head>
+        <div class="logo" align="center">
+            
+            <img src="BD logo.jfif" alt="Logo" style="height: 100px; width: 100px;" >
+            <h4>Government of the People’s Republic of Bangladesh
+                <br></h4>
+                <h3>Student ID Application Form</h3>
+        </div>
+    
+        <HR WIDTH="100%" COLOR="#006a4e" SIZE="3" align="center">
+            <br>
+<div class="Form" align="center">
+<form action="Student ID Form.php" method="post">
+  <div class="ptype" >
+  
+    <label>Do you have a Birth registration number?</label>
+    <input type="text" name="br" list="br">
+<datalist id="br">
+  <option value="Yes">
+  <option value="No">
+</datalist>
+    
+  
+<div>
+<label>If yes, enter your birth registration number</label>
+<input type="number" name="birth_reg_num" size=50><br>
+</div> 
+<p1 style="color: red;">*If you do not have a Birth Registration Number, please fill out a birth registration form first.</p1>
+ 
+</div>
+<br><br>
+<div class="title">
+    <h2>Contact Information</h2>
+  </div> 
+  <br>  
+  <div class="ptype">
+        <div>
+      <label>Phone Number</label>
+      <input type="tel" name="Phone_num" ><br>
+    </div>
+      <div>
+      <label>Email</label>
+      <input type="email" name="email" ><br>
+    </div>
+    </div>
+
+    <br><br>
+<div class="title">
+    <h2>School Information</h2>
+  </div> 
+  <br>  
+  <div class="ptype">
+        <div>
+      <label>School EIIN</label>
+      <input type="number" name="EIIN" ><br>
+    </div>
+      <div>
+      <label>School Name</label>
+      <input type="text" name="School_Name" ><br>
+    </div>
+    <div>
+      <label>School Address</label>
+      <input type="text" name="School_Address" ><br>
+    </div>
+    </div>
+
+    
+    <br><br>
+    <div class="title">
+        <h2>Present Address</h2>
+      </div> 
+      <br>  
+      <div class="ptype">
+            <div>
+          <label>House/ Village/ Road</label>
+          <input type="text" name="House_Village_Road" ><br>
+        </div>
+          <div>
+          <label>Union</label>
+          <input type="text" name="Union" ><br>
+        </div>
+        <div>
+          <label>Upazilla/ Town/ City Corporation</label>
+          <input type="text" name="Upazilla_Town_City_Corp" ><br>
+        </div>
+        <div>
+          <label>District</label>
+          <input type="text" name="District" ><br>
+        </div>
+        <div>
+          <label>Post Code</label>
+          <input type="number" name="Post_Code" ><br>
+        </div><div>
+          <label>Ward Number</label>
+          <input type="number" name="Ward_Num" ><br>
+        </div><div>
+          <label>Zone Number</label>
+          <input type="number" name="Zone_Num" ><br>
+        </div>
+         </div>
+    
+<br><br>
+<div>
+  <label>Enter your image</label>
+  <input class="file-upload-input" type="file" onchange="readURL(this)" accept="Image/*" name="image" ><br>
+</div>
+
+<br>
+<div style="width: 500px; ">
+  <input  type="checkbox" id="correct" name="correct">
+  <label style="text-align: left; width: 600px;" for="correct">I hereby declare that the details and
+     information given above are complete and true.</label><br>
+  
+  </div>
+  <br><br>
+     <div>
+      <div class="submit">
+          <input type="Submit" name="save" value="Submit" >
+      </div>
+
+
+</form>
+
+ 
+</div> 
+</html>

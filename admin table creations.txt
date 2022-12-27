@@ -1,0 +1,174 @@
+CREATE TABLE birth_registration_admin
+(
+    temp_application_id bigint PRIMARY key AUTO_INCREMENT,
+    date_of_registration date,
+    First_Name varchar(50),
+ Last_Name varchar(50),
+ DOB date,
+ Gender varchar(10),
+ Place_Of_Birth varchar(50),
+ Disabilities varchar(255),
+ Present_House_Village_Road varchar(50),
+ Present_Union varchar(50),
+ Present_Upazilla_Town_City_Corp varchar(50),
+ Present_District varchar(50),
+ Present_Post_Code int,
+ Present_Ward_Num int,
+ Present_Zone_Num int,
+ Permanent_House_Village_Road varchar(50),
+ Permanent_Union varchar(50),
+ Permanent_Upazilla_Town_City_Corp varchar(50),
+ Permanent_District varchar(50),
+ Permanent_Post_Code int,
+ Permanent_Ward_Num int,
+ Permanent_Zone_Num int,
+ fathers_Name varchar(255),
+    fathers_nid int,
+    fathers_nationality varchar(100),
+    mothers_Name varchar(255),
+    mothers_nid int,
+    mothers_nationality varchar(100))
+
+CREATE TABLE nid_admin
+(
+    temp_application_id int PRIMARY key AUTO_INCREMENT,
+    date_of_registration date,
+	Birth_Registration_Number bigint NOT null,
+    Blood_Group varchar(10),
+    Phone_Number char(11),
+    Email varchar(50),
+    Image blob,
+    Marital_Status varchar(50),
+    Spouse_Name varchar(50),
+	Spouse_NID int,
+    House_Village_Road varchar(50),
+    AddressUnion varchar(50),
+    Upazilla_Town_City_Corp varchar(50),
+    District varchar(50),
+    Post_Code int,
+    Ward_Num int,
+    Zone_Num int
+
+)
+
+
+CREATE TABLE passport_admin(
+    temp_application_id int PRIMARY key AUTO_INCREMENT,
+    date_of_registration date,
+	
+    birth_registration_number bigint,
+    NID_NUM int,
+    Phone_Num char(11),
+    email varchar(50),
+    Image blob,
+    House_Village_Road varchar(50),
+    AddressUnion varchar(50),
+    Upazilla_Town_City_Corp varchar(50),
+    District varchar(50),
+    Post_Code int,
+    Ward_Num int,
+    Zone_Num int
+    
+)
+
+CREATE TABLE board_exam_registration_admin(
+    temp_application_id int PRIMARY key AUTO_INCREMENT,
+    date_of_registration date,
+	
+    birth_registration_number bigint,
+    education_board_name varchar(255),
+    board_exam_name varchar(255),
+    main_sub_choice varchar(100),
+    optional_sub_choice varchar(100),
+    
+    Phone_Num char(11),
+    email varchar(50),
+    Image blob,
+    School_EIIN int,
+    School_Nmae varchar(255),
+    School_Address varchar(255),
+    
+    House_Village_Road varchar(50),
+    AddressUnion varchar(50),
+    Upazilla_Town_City_Corp varchar(50),
+    District varchar(50),
+    Post_Code int,
+    Ward_Num int,
+    Zone_Num int
+    
+)
+
+
+CREATE TABLE student_id_admin(
+    temp_application_id int PRIMARY key AUTO_INCREMENT,
+    date_of_registration date,
+    birth_registration_number bigint,
+    Phone_Num char(11),
+    email varchar(50),
+    Image blob,
+    School_EIIN int,
+    School_Name varchar(255),
+    School_Address varchar(255),
+    
+    House_Village_Road varchar(50),
+    AddressUnion varchar(50),
+    Upazilla_Town_City_Corp varchar(50),
+    District varchar(50),
+    Post_Code int,
+    Ward_Num int,
+    Zone_Num int
+    
+)
+
+CREATE TABLE drivers_license_admin(
+    temp_application_id bigint PRIMARY key AUTO_INCREMENT,
+    date_of_registration date,
+    birth_registration_number bigint,
+    NID_NUM int,
+
+    Phone_Num char(11),
+    email varchar(50),
+    Image blob,
+    BRTA_office_code int,
+    Applicant_type varchar(100),
+    Application_type varchar(100),
+    class_of_vehicle varchar(100),
+    
+    House_Village_Road varchar(50),
+    AddressUnion varchar(50),
+    Upazilla_Town_City_Corp varchar(50),
+    District varchar(50),
+    Post_Code int,
+    Ward_Num int,
+    Zone_Num int
+)
+
+
+CREATE TABLE birth_registration_update_admin
+(
+    First_Name varchar(50),
+ Last_Name varchar(50),
+ DOB date,
+ Gender varchar(10),
+ Place_Of_Birth varchar(50),
+ Disabilities varchar(255),
+ Present_House_Village_Road varchar(50),
+ Present_Union varchar(50),
+ Present_Upazilla_Town_City_Corp varchar(50),
+ Present_District varchar(50),
+ Present_Post_Code int,
+ Present_Ward_Num int,
+ Present_Zone_Num int,
+ Permanent_House_Village_Road varchar(50),
+ Permanent_Union varchar(50),
+ Permanent_Upazilla_Town_City_Corp varchar(50),
+ Permanent_District varchar(50),
+ Permanent_Post_Code int,
+ Permanent_Ward_Num int,
+ Permanent_Zone_Num int,
+ fathers_Name varchar(255),
+    fathers_nid int,
+    fathers_nationality varchar(100),
+    mothers_Name varchar(255),
+    mothers_nid int,
+    mothers_nationality varchar(100))
