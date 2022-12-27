@@ -4,6 +4,17 @@
     box-sizing: border-box;
 
 }
+.Quick{
+    display: flex;
+    background: rgb(52, 143, 239);
+    width: 1fr;
+    justify-content: center;
+    color: aliceblue;
+    font-size: 30px;
+    padding-top: 12px;
+    padding-bottom:  12px;
+
+}
 
 body{
     background-color:rgb(255, 255, 255);
@@ -31,12 +42,15 @@ body{
 }
 .top-left{
     display: flex;
-    align-items: center;
+    align-items: right ;
+    right: 0;
     width: 800px;
     font-size: 18px;
     text-transform: uppercase;
     right: 0;
+    
 }
+
 
 .content{
     height: 100vh;

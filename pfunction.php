@@ -24,7 +24,7 @@ function signup($data)
 		//$password_error2 = "Passwords must match";
 	}
 
-	$check = database_run("select * from user where email = :email limit 1",['email'=>$data['email']]);
+	$check = database_run("select * from admin where email = :email limit 1",['email'=>$data['email']]);
 	if(is_array($check)){
 		$errors[] = "This email already exists";
 		//$email_error = "That email already exists";
@@ -38,7 +38,7 @@ function signup($data)
 		$arr['password'] = hash('sha256',$data['password']);
 		$arr['date'] = date("Y-m-d H:i:s");
 
-		$query = "insert into user (username,email,password,date) values 
+		$query = "insert into admin (username,email,password,date) values 
 		(:username,:email,:password,:date)";
 
 		database_run($query,$arr);
@@ -65,7 +65,7 @@ function login($data)
 		$arr['email'] = $data['email'];
 		$password = hash('sha256', $data['password']);
 
-		$query = "select * from user where email = :email limit 1";
+		$query = "select * from admin where email = :email limit 1";
 
 		$row = database_run($query,$arr);
 
@@ -119,12 +119,10 @@ function check_login($redirect = true){
 	}
 
 	if($redirect){
-		header("Location: dlogin.php");
+		header("Location: plogin.php");
 		die;
 	}else{
 		return false;
 	}
 	
 }
-
-
