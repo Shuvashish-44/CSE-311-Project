@@ -27,13 +27,13 @@
     h2{
     color: white;
     }
-    label{
+    .ptype label{
     display: inline-block;
     width: 150px;
     text-align: right;
     color: #006a4e;   
     }
-    input{
+    .ptype input{
     width:500px;
     }
     .ptype{
@@ -42,4 +42,7 @@
     border: 2px solid #e21f36a6;
     margin: 0;
     }
-    
+    p1, label{
+        color: #006a4e;   
+     
+    }
