@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+.main_body{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 650px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width: 25%;
+    
+    left: 0;
+    margin-right: 5px;
+    padding-right: 10px;
+}
+.flag{
+    margin-left: 10px;
+    height: 150px;
+    display: flex;
+    margin-bottom: 10px;
+    
+}
+.middle{
+    display: flex;
+    flex-direction: column;
+   
+    background-color:rgb(195, 223, 247) ;
+    
+    margin-right: 5px;
+    padding-right: 10px;
+}
+
+
+.bd{
+    display: flex;
+    height: 100px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    
+    box-sizing: 1px;
+    border-style: solid;
+    border-color:green;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+.img{
+    display: flex;
+    height: 85px;
+    width: 85px;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 4px;
+
+}
+
+.dtitle{
+    display: flex;
+    font-family:'Roboto', Courier, monospace;
+    font-size: 30px;
+    color: black;
+    padding: 4px;
+    align-items: center;
+    
+    
+    
+    font-size: bold;
+
+}
+.hold{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    justify-content: center;
+    box-sizing: 1px;
+    border-style: solid;
+    border-color:green;
+    padding-left: 10px;
+    padding-right: 10px;
+
+
+}
+.box{
+    display: flex;
+    flex-direction: row;
+   
+   
+    
+
+
+}
+.image{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 4px;
+   
+    
+    
+
+}
+
+.title{
+    display: flex;
+    font-family:'Roboto', Courier, monospace;
+    font-size: 30px;
+    width:70%;
+    justify-content: left;
+   
+    
+    
+    color: black;
+    padding: 4px;
+    
+   
+
+}
+.message{
+    display: flex;
+    font-family:'Roboto', Courier, monospace;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+    color:rgb(128, 0, 0);
+    padding: 4px;
+    align-items: center;
+  
+
+}
+
+
+
+ 
+
+.right{
+    display: flex;
+    flex-direction: column;
+    
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width: 25%;
+    color: white;
+    right: 0;
+}
