@@ -15,200 +15,129 @@
         <HR WIDTH="100%" COLOR="#006a4e" SIZE="3" align="center">
             <br>
 <div class="Form" align="center">
-<form action="" method="post">
-<div class="ptype">
-        <div>
-      <label>Passport Type</label>
-      <input type="text" name="type" size=50><br>
-    </div>
-      
-      <div> 
-      <label>Duration of Passport(in years)</label>
-      <input type="number" name="Duration" ><br>
-    </div>
-      <div>  
-      <label>Type of Delivery</label>
-      <input type="text" name="delivery" > 
-      </div>  
-     
+<form action="Passport_Form.php" method="post">
+  <div class="ptype" >
+  
+    <label>Do you have a Birth registration number?</label>
+    <input type="text" name="br" list="br">
+<datalist id="br">
+  <option value="Yes">
+  <option value="No">
+</datalist>
+    
+  
+<div>
+<label>If yes, enter your birth registration number</label>
+<input type="number" name="birth_reg_num" size=50><br>
+</div> 
+<p1 style="color: red;">*If you do not have a Birth Registration Number, please fill out a birth registration form first.</p1>
+ <br>
+ <label>Do you have an NID number?</label>
+ <input type="text" name="nid" list="nid">
+<datalist id="nid">
+<option value="Yes">
+<option value="No">
+</datalist>
+ 
+<div>
+  <label>If yes, enter your NID number</label>
+  <input type="number" name="NID_Num" size=50><br>
+  </div> 
 </div>
 <br><br>
 <div class="title">
-    <h2>Personal Information</h2>
+    <h2>Contact Information</h2>
   </div> 
   <br>  
   <div class="ptype">
         <div>
-      <label>Full Name</label>
-      <input type="text" name="full_name" ><br>
+      <label>Phone Number</label>
+      <input type="tel" name="Phone_num" ><br>
     </div>
       <div>
-      <label>Surname</label>
-      <input type="text" name="surname" ><br>
+      <label>Email</label>
+      <input type="email" name="email" ><br>
     </div>
-      <div>  
-      <label>National ID Number</label>
-      <input type="number" name="nid" min="1000000000"> <br>
-    </div>
-      <div> 
-      <label>Place of Birth</label>
-      <input type="text" name="place_of_birth"><br>
-    </div>
-    <div> 
-      <label>Date of Birth</label>
-      <input type="date" name="DOB" ><br>
-    </div>
-      <div>  
-      <label>Religion</label>
-            <input type="text" name="religion" > 
-      </div> 
-      <div> 
-        <label>Gender</label>
-        <input type="text" name="gender" ><br>
-       </div>
     </div>
 
     
-<br><br>
-<div class="title">
-    <h2>Applicant's Address</h2>
-  </div> 
-  <br>  
-  <div class="ptype">
-        <div>
-      <label>Present Address</label>
-      <input type="text" name="Present_Address" ><br>
-    </div>
-      <div>
-      <label>Permanent Address</label>
-      <input type="text" name="Permanent_address" ><br>
-    </div>
-     </div>
-
-     <br><br>
-<div class="title">
-    <h2>Parental Information</h2>
-  </div> 
-  <br>  
-  <div class="ptype">
-        <div>
-      <label>Father's Name</label>
-      <input type="text" name="Fathers_Name" ><br>
-    </div>
-      <div>
-      <label>Father's National Id Number</label>
-      <input type="number" name="fathers_nid" min="1000000000" ><br>
-    </div>
-      <div>  
-      <label>Father's Nationality</label>
-      <input type="text" name="fathers_nationality"> <br>
-    </div>
-      <div> 
-      <label>Father's Profession</label>
-      <input type="text" name="fathers_profession"><br>
-    </div> <div>
-      <label>Mother's Name</label>
-      <input type="text" name="Mothers_Name" ><br>
-    </div>
-      <div>
-      <label>Mother's National Id Number</label>
-      <input type="number" name="mothers_nid" min="1000000000" ><br>
-    </div>
-      <div>  
-      <label>Mother's Nationality</label>
-      <input type="text" name="mothers_nationality"> <br>
-    </div>
-      <div> 
-      <label>Mother's Profession</label>
-      <input type="text" name="mothers_profession"><br>
-    </div>
-  </div>
-  
-  <br><br>
-  <div class="title">
-      <h2>Spouse Information</h2>
-    </div> 
-    <br>  
-    <div class="ptype">
-          <div>
-        <label>Spouse's Name</label>
-        <input type="text" name="Spouse_Name" ><br>
-      </div>
-        <div>
-        <label>Spouse's NID</label>
-        <input type="number" name="spouse_nid" min="1000000000" ><br>
-      </div>
-        <div>  
-        <label>Spouse's Nationality</label>
-        <input type="text" name="spouse_nationality"> <br>
-      </div>
-        <div> 
-        <label>Spouse's Profession</label>
-        <input type="text" name="spouse_profession"><br>
-      </div> 
-    </div>
-
-
     <br><br>
     <div class="title">
-        <h2>Emergency Contact</h2>
+        <h2>Present Address</h2>
       </div> 
       <br>  
       <div class="ptype">
             <div>
-          <label>Name</label>
-          <input type="text" name="Contact_Name" ><br>
+          <label>House/ Village/ Road</label>
+          <input type="text" name="House_Village_Road" ><br>
         </div>
           <div>
-          <label>National ID Number</label>
-          <input type="number" name="contact_nid" min="1000000000" ><br>
+          <label>Union</label>
+          <input type="text" name="Union" ><br>
         </div>
-          <div>
-          <label>Relationship</label>
-          <input type="text" name="contact_relationship"><br>
+        <div>
+          <label>Upazilla/ Town/ City Corporation</label>
+          <input type="text" name="Upazilla_Town_City_Corp" ><br>
         </div>
-          <div>  
-          <label>Country</label>
-          <input type="text" name="contact_country"> <br>
+        <div>
+          <label>District</label>
+          <input type="text" name="District" ><br>
         </div>
-          <div> 
-          <label>Address</label>
-          <input type="text" name="contact_address"><br>
+        <div>
+          <label>Post Code</label>
+          <input type="number" name="Post_Code" ><br>
+        </div><div>
+          <label>Ward Number</label>
+          <input type="number" name="Ward_Num" ><br>
+        </div><div>
+          <label>Zone Number</label>
+          <input type="number" name="Zone_Num" ><br>
         </div>
-        
-        <div> 
-          <label>Contact No.</label>
-          <input type="number" name="contact_number"><br>
-        </div>
-        
-        <div> 
-          <label>Email</label>
-          <input type="text" name="contact_email"><br>
-        </div> 
-      </div>
-  
+         </div>
 
-      <br><br>
-      <div class="title">
-          <h2>Bank Payment Information</h2>
-        </div> 
-        <br>  
-        <div class="ptype">
-              <div>
-            <label>Bank Name</label>
-            <input type="text" name="Bank_Name" ><br>
-          </div>
-            <div>
-            <label>Payment Reference Number</label>
-            <input type="number" name="payment_ref_num"  ><br>
-          </div>
-            <div>  
-            <label>Payment Amount</label>
-            <input type="number" name="payment_amount"> <br>
-          </div>
-     </div>
-
+         <br><br>
+         <div class="title">
+             <h2>Emergency Contact Information</h2>
+           </div> 
+           <br>  
+           <div class="ptype">
+                 <div>
+               <label>Contact's Name</label>
+               <input type="text" name="contact_Name" ><br>
+             </div>
+             <div>
+               <label>Contact's National Id Number</label>
+               <input type="number" name="contact_nid" ><br>
+             </div>
+             <div>
+               <label>Contact's Phone Number</label>
+               <input type="tel" name="contact_phone" ><br>
+             </div>
+               <div>
+               <label>Contact's Relationship with the Applicant</label>
+               <input type="text" name="contact_relationship" ><br>
+             </div>
+             <div>
+               <label>Contact's Address</label>
+               <input type="text" name="contact_address" ><br>
+             </div>
+             
+           </div>
+             
 <br><br>
+<div>
+  <label>Enter your image</label>
+  <input class="file-upload-input" type="file" onchange="readURL(this)" accept="Image/*" name="image" ><br>
+</div>
+
+<br>
+<div style="width: 500px; ">
+  <input  type="checkbox" id="correct" name="correct">
+  <label style="text-align: left; width: 600px;" for="correct">I hereby declare that the details and
+     information given above are complete and true.</label><br>
+  
+  </div>
+  <br><br>
      <div>
       <div class="submit">
           <input type="Submit" name="save" value="Submit" >
