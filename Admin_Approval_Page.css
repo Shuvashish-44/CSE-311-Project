@@ -1,0 +1,25 @@
+.logo{ 
+    width: 100%;
+    height: 250px;
+    margin: 0;
+    vertical-align: center;
+    border-radius: 0%;
+    background: #006a4e;
+    text-align: center;
+}
+h1{
+    color: white;
+}
+h2{
+    color: yellow;
+}
+.button input{
+    width: 350px;
+    height: 50px;
+    background-color: #006a4e;
+    color: yellow;
+    border-radius: 5%;
+    }
+    .bg{
+        background-image: linear-gradient(#D8DFC8, white);
+    }
