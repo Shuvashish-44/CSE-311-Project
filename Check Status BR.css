@@ -1,0 +1,44 @@
+.logo{ 
+    width: 100%;
+    height: 220px;
+    margin: 0;
+    vertical-align: center;
+    border-radius: 0%;
+    background: #006a4e;
+    text-align: center;
+}
+
+h1{
+    color: white;
+}
+h2{
+    color: yellow;
+}
+
+    .ptype input{
+        width: 300px;
+        height: 20px;
+    }
+    .ptype label{
+        display: inline-block;
+        width: 150px;
+        text-align: right;
+        color: white;   
+        }
+    
+    .bg{
+        background-image: linear-gradient(#D8DFC8, white);
+    }
+    .ptype{
+        background-color: #006a4e;
+        width: 500px;
+        height: 250px;
+        padding: 10px;
+        margin: 0;
+    }
+    .submit input{
+        width: 200px;
+        height: 50px;
+        background-color: #006a4e;
+        color: white;
+        }
